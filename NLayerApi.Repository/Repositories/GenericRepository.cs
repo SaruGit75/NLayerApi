@@ -17,7 +17,7 @@ namespace NLayerApi.Repository.Repositories
             _dbSet = _context.Set<T>();
         }
 
-        public IQueryable<T> GetAll(Expression<Func<T, bool>> expression)
+        public IQueryable<T> GetAll()
         {
             return _dbSet.AsNoTracking().AsQueryable(); //kayitlar memory'e alinmasin sadece datayi gostersin. asnotracking
         }
