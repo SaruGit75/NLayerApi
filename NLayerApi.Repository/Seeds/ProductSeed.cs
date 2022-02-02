@@ -4,7 +4,7 @@ using NLayerApi.Core.Models;
 
 namespace NLayerApi.Repository.Seeds;
 
-public class ProductSeed : IEntityTypeConfiguration<Product>
+internal class ProductSeed : IEntityTypeConfiguration<Product>
 {
     public void Configure(EntityTypeBuilder<Product> builder)
     {

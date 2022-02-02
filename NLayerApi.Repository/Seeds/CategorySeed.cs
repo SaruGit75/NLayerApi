@@ -4,7 +4,7 @@ using NLayerApi.Core.Models;
 
 namespace NLayerApi.Repository.Seeds
 {
-    public class CategorySeed : IEntityTypeConfiguration<Category>
+    internal class CategorySeed : IEntityTypeConfiguration<Category>
     {
         public void Configure(EntityTypeBuilder<Category> builder)
         {

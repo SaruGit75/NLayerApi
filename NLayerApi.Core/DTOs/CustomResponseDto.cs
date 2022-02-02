@@ -4,10 +4,9 @@ namespace NLayerApi.Core.DTOs
 {
     public class CustomResponseDto<T>
     {
+        public T? Data { get; set; }
         [JsonIgnore]
         public int StatusCode { get; set; }
-
-        public T? Data { get; set; }
         public List<string>? Errors { get; set; }
         
         

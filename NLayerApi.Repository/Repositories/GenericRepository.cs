@@ -8,10 +8,10 @@ namespace NLayerApi.Repository.Repositories
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly AppDbContext _context;
-        private readonly DbSet<T> _dbSet;
+        private readonly DbSet<T> _dbSet;   //generix repoda constructor da dbSete parametre vermemeliyiz.
 
 
-        public GenericRepository(AppDbContext context, DbSet<T> dbSet)
+        public GenericRepository(AppDbContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();
